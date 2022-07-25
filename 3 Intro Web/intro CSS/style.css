@@ -1,0 +1,23 @@
+
+
+* {
+    font-size: 1rem;
+}
+
+
+body{
+    background-color: rgb(195, 135, 75);
+}
+
+h1 {
+    color: maroon;
+    margin-left: 40px;
+}
+
+p {
+    color: blueviolet;
+}
+
+div.nuevo {
+    color: aqua;
+}
