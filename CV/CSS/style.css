@@ -1,0 +1,41 @@
+body{
+    background-color: #dddddd;
+}
+
+h1{
+    color: #84a9ac;
+}
+
+h2{
+    color: #89c9b8;
+}
+
+h3{
+    color: #89c9b8;
+}
+
+hr{
+    border-color: #d9adad;
+    border-style: none;
+    border-top-style: dotted;
+    border-width: 5px;
+    width: 30%;
+}
+
+.cita {
+    font-size: 1.4rem;
+    max-width: 400px;
+    line-height: 1.4;
+    font-style: italic;
+}
+
+.autor {
+    float: right;
+    font-size: 1.1rem;
+    font-weight: bold;
+}
+
+.cita-icon {
+    margin-bottom: 10px;
+}
+
