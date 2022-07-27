@@ -1,0 +1,25 @@
+div ul {
+    border: yellow 10px solid;
+    margin: 10px;
+    padding: 20px;
+}
+
+div li p {
+    color: darkorange;
+}
+
+div ~ p {
+    color: red;
+}
+
+div > p {
+    color: steelblue;
+}
+
+div ~ p {
+    color: darkolivegreen;
+}
+
+div + p {
+    color: silver;
+}

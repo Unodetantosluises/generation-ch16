@@ -1,0 +1,38 @@
+* {
+    font-size: xx-large;
+}
+
+body {
+    width: 800px;
+}
+
+header {
+    background-color: yellow;
+    height: 200px;
+    width: auto;
+}
+
+main {
+    display: flex;
+    align-items: center;
+    background-color: mediumseagreen;
+    width: auto;
+    height: 500px;
+}
+
+aside {
+    background-color: blue;
+}
+
+footer {
+    background-color: tomato;
+    width: auto;
+    height: 100px;
+}
+
+.cuadro {
+    display: inline-block;
+    width: 200px;
+    height: 200px;
+    background-color: deeppink;
+}
