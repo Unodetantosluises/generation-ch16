@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=div, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>Formularios</h1>
+    <br>
+    <div class="campo">
+        <label for="nombre">Nombre:</label>
+        <input type="text" placeholder="Juan Carlos"
+        name="nombre" id="nombre" required>
+    </div>
+
+    <div class="campo">
+        <label for="email">Email:</label>
+        <input type="email" name="email" id="email" placeholder="jCarlos@gmail.com" required>
+    </div>
+
+    <div>
+        <form action="campo"></form>
+        <label for="password">Contraseña:</label>
+        <input type="password" name="password" id="password">
+    </div>
+
+    <div class="campo">
+        <label for="color">Color</label>
+        <input type="color" name="color" id="color">
+    </div>
+
+    <div class="campo">
+        <label for="number">Number</label>
+        <input type="number" name="number" id="number">
+    </div>
+
+    <div>
+        <label for="nombre">Nombre</labe>
+    </div>
+    <div class="submit">
+        <input type="submit" value="Enviar">
+    </div>
+
+    <input type="reset" value="Limpiar">
+
+    <!-- <button type="submit">Enviar</button> -->
+
+    </form>
+
+    <h3>Input de Rango don Marcas</h3>
+    <input type="range" list="tickmarks" min="0" max="20">
+
+    <datalist id="tickmarks">
+        <option value="0">
+        <option value="5">
+        <option value="15">
+    </datalist>
+
+    <div class="campo">
+        <label for="fecha">Fecha</label>
+        <input type="date" name="fecha" id="Fecha">
+    </div>
+
+    <div class="campo">
+        <label for="archvivo">Archivo</label>
+        <input type="file" name="archivo" id="archivo">
+    </div>
+
+    <div class="campo">
+        <label for="radio">Radio</label>
+        <input type="radio" name="radio" id="radio"
+        value="opcion 1">
+    </div>
+
+    <div class="campo">
+        <label for="checkbox">Checkbox</label>
+        <input type="chechbox" name="checkbox" id="checkbox" value="opcion 2">
+
+    </div>
+</body>
+</html>
