@@ -1,0 +1,52 @@
+.cuadro-padre {
+    background-color: papayawhip;
+
+    display: flex;
+
+    flex-direction: row;
+}
+
+.cuadro {
+    height: 150px;
+    width: 100px;
+    padding: 50px 40px 30px 20px;
+    margin: 20px 40px;
+    border: 10px solid gray;
+}
+.el-1 {
+    background-color: yellow;
+    position: fixed;
+}
+
+.el-2 {
+    background-color: navy;
+    position: sticky;
+    top: 0;
+}
+
+.cuadro3 {
+    background-color: violet;
+    position: relative;
+    bottom: 0px;
+    left: 100px;
+}
+
+.cuadro4 {
+    background-color: tomato;
+    position: static;
+}
+
+.cuadro5 {
+    background-color: aqua;
+}
+
+.contenedor {
+    height: 200px;
+    background-color: cadetblue;
+    max-width: 0 auto;
+}
+
+.fila {
+    display: flex;
+}
+
