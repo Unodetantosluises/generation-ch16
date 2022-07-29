@@ -1,39 +1,48 @@
 .cuadro-padre {
     background-color: papayawhip;
-
+    height: 900px;
     display: flex;
-
+    /* Cambia el espaciado de forma horizontal */
     flex-direction: row;
+    /* Cambia la alineacion de forma vertical */
+    justify-content: center;
+    align-items: center;
 }
 
 .cuadro {
+    background-color: dimgray;
     height: 150px;
     width: 100px;
-    padding: 50px 40px 30px 20px;
-    margin: 20px 40px;
+
+    margin-top: 20px;
+    margin-bottom: 5px;
+    margin-left: 5px;
+    margin-right: 15px;
+
+    padding: 20px;
+    border-radius: 0px 100px 100px 100px;
     border: 10px solid gray;
 }
 .el-1 {
     background-color: yellow;
-    position: fixed;
+    flex-grow: 3;
 }
 
 .el-2 {
     background-color: navy;
-    position: sticky;
-    top: 0;
+    flex-grow: 1;
+    align-self: flex-start;
 }
 
 .cuadro3 {
     background-color: violet;
-    position: relative;
-    bottom: 0px;
-    left: 100px;
+    flex-grow: 1;
 }
 
 .cuadro4 {
     background-color: tomato;
-    position: static;
+    flex-grow: 1;
+    align-self: flex-end;
 }
 
 .cuadro5 {
