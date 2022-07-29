@@ -2,13 +2,35 @@ body {
     background-color: green;
 }
 
+ol {
+    list-style-type: upper-latin;
+}
+
 h1 {
     color: whitesmoke;
+    width: fit-content;
+}
+
+div {
+    background-color: violet;
+    width: 200px;
 }
 
 p {
     color: white;
 }
-/* 
 
-*/
+a {
+    display: inline-block;
+    background-color: lightslategrey;
+    width: 200px;
+    height: 400px;
+    border: 1px solid black;
+}
+
+span {
+    font-size: large;
+    font-family: cursive;
+    font-weight: 700;
+    border: 2px dotted blue;
+}

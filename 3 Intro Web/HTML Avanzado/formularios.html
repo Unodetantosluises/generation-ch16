@@ -4,11 +4,13 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=div, initial-scale=1.0">
-    <title>Document</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.2/css/all.min.css" integrity="sha512-1sCRPdkRXhBV2PBLUdRb4tMg1w2YPf37qatUFeS7zlBy7jJI8Lf4VHwWfZZfpXtYSLy85pkm9GaYVYMfw5BC1A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <title>Formulario</title>
 </head>
 <body>
-    <h1>Formularios</h1>
+    <h1>Formulario</h1>
     <br>
+    <form>
     <div class="campo">
         <label for="nombre">Nombre:</label>
         <input type="text" placeholder="Juan Carlos"
@@ -32,52 +34,59 @@
     </div>
 
     <div class="campo">
-        <label for="number">Number</label>
-        <input type="number" name="number" id="number">
+        <label for="number">Numero</label>
+        <input type="number" name="number" id="number" min="0">
     </div>
 
-    <div>
-        <label for="nombre">Nombre</labe>
+    <div class="campo">
+        <label for="nombre">Rango</labe>
+        <input type="range" name="number" id="number" min="1" max="10">
     </div>
-    <div class="submit">
-        <input type="submit" value="Enviar">
-    </div>
-
-    <input type="reset" value="Limpiar">
-
-    <!-- <button type="submit">Enviar</button> -->
-
-    </form>
-
-    <h3>Input de Rango don Marcas</h3>
-    <input type="range" list="tickmarks" min="0" max="20">
-
-    <datalist id="tickmarks">
-        <option value="0">
-        <option value="5">
-        <option value="15">
-    </datalist>
 
     <div class="campo">
         <label for="fecha">Fecha</label>
-        <input type="date" name="fecha" id="Fecha">
+        <input type="date" name="fecha" id="fecha">
     </div>
 
     <div class="campo">
-        <label for="archvivo">Archivo</label>
-        <input type="file" name="archivo" id="archivo">
+        <label for="file">Archivo</label>
+        <input type="file" name="file" id="file">
     </div>
 
     <div class="campo">
         <label for="radio">Radio</label>
-        <input type="radio" name="radio" id="radio"
-        value="opcion 1">
+        <input type="radio" name="name" id="radio">
     </div>
 
-    <div class="campo">
+    <div>
         <label for="checkbox">Checkbox</label>
-        <input type="chechbox" name="checkbox" id="checkbox" value="opcion 2">
+        <input type="checkbox" name="checkbox" id="checkbox" value="opcion2">
+    </div>
 
+    <div class="submit">
+        <input type="submit" value="Enviar">
+        <!-- Tambien podemos usar el boton -->
+        <!-- <button type="sumit">Enviar</button> -->
+    </div>
+
+    <div class="reset">
+        <input type="reset" value="Limpiar">
+    </div>
+    </form>
+
+    <h3>Input de Rango con Marcas</h3>
+    <input type="range" list="tickmarks">
+    <datalist id="tickmarks">
+        <option value="0"></option>
+        <option value="5"></option>
+        <option value="15"></option>
+    </datalist>
+
+    <div class="fa-3x">
+        <i class="fa-solid fa-heart fa-beat"></i>
+        <i class="fa-solid fa-heart fa-beat" style="--fa-animation-duration: 0.5s;"></i>
+        <i class="fa-solid fa-heart fa-beat" style="--fa-animation-duration: 2s;"></i>
+        <i class="fa-solid fa-heart fa-beat" style="--fa-beat-scale: 2.0"></i>
     </div>
 </body>
 </html>

@@ -16,8 +16,8 @@ main {
     display: flex;
     align-items: center;
     background-color: mediumseagreen;
-    width: auto;
-    height: 500px;
+    height: autopx;
+    width: 500px;
 }
 
 aside {
@@ -27,7 +27,7 @@ aside {
 footer {
     background-color: tomato;
     width: auto;
-    height: 100px;
+    height: 50px;
 }
 
 .cuadro {
