@@ -15,14 +15,20 @@ d = "Hola Mundo";
 
 // String
 let cadena = "Hola Mundo";
+let candena2 = "Hola Mundo";
 
 // Number
 let numero = 5;
 let numero2 = 5.234;
 let numero3 =234.1;
 
+if(true) {
+    let d = 15;
+}
+
 //Boolean
-let boolean = true;
+let booleano = true;
+let booleano2 = false;
 //Se recomienda que las variabales no se usen variables reservadas.
 
 // Undefiend - Sin Definir
@@ -30,6 +36,7 @@ let variables;
 //consol.log(variable)
 
 //null
+let vacio = null;
 
 /* Plantillas Literales
     template strings
@@ -43,6 +50,14 @@ console.log("Esta es una cadena normal ${5 + 4}")
 
 let nombre = 'Luis';
 
+/* let presentacion = ``*/
+/* console.log("Mi nombre es" + nombre);
+console.log(`Yo me llamo ${nombre}`);
+
+console.log("<h1>Hola</h1>");
+console.log(`<h1>Hola</h1>`);
+*/
+
 console.log("Mi nombre es " + nombre);
 console.log(`Yo me llamo ${nombre}`);
 
@@ -53,6 +68,7 @@ let arr = [1, "A", null, undefined, [false, true]];
 console.log(arr[4][0]);
 
 let arr2 = new Array("B", 2);
+//console.log(arr2);
 
 // Objetos
 const persona = { nombre: 'Luis',
