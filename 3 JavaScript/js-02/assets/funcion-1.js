@@ -41,7 +41,7 @@ function nombreCompleto(a, b, c) {
     console.log("Mi nombre es " + nombre + " " + apellidoPaterno + " " + apellidoMaterno);
 
 }
-nombreCompleto("Fabiola", "Gómez", "Montiel")
+nombreCompleto("Luis Antonio", "Diaz", "Martinez")
 
 /* Segunda función
 Crear función en donde hagan la operación de cociente o división
