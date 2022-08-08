@@ -20,7 +20,26 @@ const padreImg = document.getElementById('padreImg');
 const imagen2 = document.createElement("img");
 // 4.-Modificamos los atributos del Elemento
 imagen2.src = "htttps://placeimg.com/200/200/nature";
-imagen2.alt = "Iamgen de Naturaleza";
+imagen2.alt = "Imagen de Naturaleza";
 
 // 5.-Insertar Elemento
 padreImg.appendChild(imagen2);
+
+// utilizar forEach para pintar datos
+const frutas = ["Toronja", "Manzana", "Mandarina", "Limon", "Granada", "Mango", "Melon", "Platano", "Guayaba"];
+
+const listaFrutas = document.getElementById('frutas');
+
+// Forma 1
+/* 
+frutas.forEach((element) => {
+    const li = document.createElement('li');
+    li.textContent = element
+    listaFrutas.appendChild(li);
+}) 
+*/
+
+// Forma 2
+frutas.forEach((el) => {
+    listaFrutas.innerHTML = `<li>${el}</li>`;
+})
