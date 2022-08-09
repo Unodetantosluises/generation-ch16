@@ -1,8 +1,8 @@
-const url = "https://dog.ceo/api/breeds/image/random"
+const url = "https://dog.ceo/api/breeds/list/all";
 
 // Fetch es una funcion  que te regresa una promesa, cponsultando datos de internet
 fetch(url).then((respuesta)=>{
-    console.log(respuesta)
+    //console.log(respuesta)
 })
 
 // Obtener la informacion de la peticion
