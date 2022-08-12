@@ -1,23 +1,40 @@
 // URL para consumir
-const urlPokemon = "https://pokeapi.co/api/v2/pokemon/197"
+let urlPokemon = "https://pokeapi.co/api/v2/pokemon/"
 
 // Elementos del DOM
 const imgPokemon = document.getElementById("img-poke")
-console.log(imgPokemon);
 
 const idPokemon = document.getElementById("id-pokemon")
-console.log(idPokemon);
 
 const nombrePokemon = document.getElementById("nombre-pokemon")
-console.log(nombrePokemon);
 
 const listaHabilidades = document.getElementById("listaHabilidades")
-console.log(listaHabilidades);
 
 const listaTipos = document.getElementById("listaTipos")
 
+const formulario = document.getElementById("buscaPokemon")
+console.log(formulario);
+
+// Eventos
+formulario.addEventListener("submit", (e) =>{
+    e.preventDefault()
+
+    const inputPokemon = document.getElementById("busquedaPokemon")
+    console.log(inputPokemon.value);
+
+    urlPokemon += inputPokemon.value;
+    
+    const nuevaBusqueda = urlPokemon + inputPokemon.value;
+
+    obtenerPokemon(nuevaBusqueda);
+})
+
+
 // Funciones
 async function obtenerPokemon(url){
+
+    try {
+
     const respuesta = await fetch(url)
     const datos = await respuesta.json()
 
@@ -57,14 +74,26 @@ async function obtenerPokemon(url){
         template = `<li class="list-group-item">${nombreHabilidad}</li>` 
     }
     
-    listaHabilidades.innerHTML += template;
+    listaHabilidades.innerHTML = template;
 
     //Tipos
+    console.log(pokemon.tipo);
 
-    pokemon.tipos.forEach((tipo) => {
-        console.log(tipo.type.name);
+    let templateTipos = ""
+
+    pokemon.tipo.forEach((tipo) => {
+        const nombreTipo = tipo.type.name;
+        console.log(nombreTipo);
+
+        template += `<li class="list-group-item">${nombreTipo}</li>`
+    
     })
 
+    listaTipos.innerHTML = templateTipos;
+    
+    } catch (e) {
+        alert("Pokemon No")
+    }
 }
 
 obtenerPokemon(urlPokemon)
