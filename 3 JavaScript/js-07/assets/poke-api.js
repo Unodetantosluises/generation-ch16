@@ -8,9 +8,9 @@ const idPokemon = document.getElementById("id-pokemon")
 
 const nombrePokemon = document.getElementById("nombre-pokemon")
 
-const listaHabilidades = document.getElementById("listaHabilidades")
+const listaHabilidades = document.getElementById("lista-Habilidades")
 
-const listaTipos = document.getElementById("listaTipos")
+const listaTipos = document.getElementById("lista-Tipos")
 
 const formulario = document.getElementById("buscaPokemon")
 console.log(formulario);
@@ -21,8 +21,6 @@ formulario.addEventListener("submit", (e) =>{
 
     const inputPokemon = document.getElementById("busquedaPokemon")
     console.log(inputPokemon.value);
-
-    urlPokemon += inputPokemon.value;
     
     const nuevaBusqueda = urlPokemon + inputPokemon.value;
 
@@ -48,8 +46,8 @@ async function obtenerPokemon(url){
     const pokemon = {
         nombre: datos.forms[0].name,
         habilidades: datos.abilities,
-        numero: datos.id,
-        tipo: datos.types,
+        id: datos.id,
+        tipos: datos.types,
         imagen: datos.sprites.other["official-artwork"].front_default
     } 
     // Imagen, nombre y ID
@@ -59,41 +57,35 @@ async function obtenerPokemon(url){
     
 
     //Habilidades
-    console.log(pokemon.habilidades.length);
+    //console.log(pokemon.habilidades.length);
 
-    let template = ``
-
-    listaHabilidades.innerHTML = `<li class="list-group-item">A third item</li>`
-
+    let template = ``;
+    // Trae las habilidades con ciclo for
     for(let i=0; i < pokemon.habilidades.length; i++){
 
-        const nombreHabilidad = pokemon.habilidades[i].abilities.name
-
-        console.log(nombreHabilidad);
+        const nombreHabilidad = pokemon.habilidades[i].ability.name;
+        //console.log(nombreHabilidad);
         
-        template = `<li class="list-group-item">${nombreHabilidad}</li>` 
+        template += `<li class="list-group-item">${nombreHabilidad}</li>` 
     }
-    
+
     listaHabilidades.innerHTML = template;
 
     //Tipos
-    console.log(pokemon.tipo);
+    let templateTipos = ``;
+    //console.log(pokemon.tipo);
 
-    let templateTipos = ""
-
-    pokemon.tipo.forEach((tipo) => {
+    // Traer habilidades con forEach()
+    pokemon.tipos.forEach((tipo) => {
         const nombreTipo = tipo.type.name;
-        console.log(nombreTipo);
 
-        template += `<li class="list-group-item">${nombreTipo}</li>`
+        templateTipos += `<li class="list-group-item">${nombreTipo}</li>`;
     
     })
 
     listaTipos.innerHTML = templateTipos;
     
-    } catch (e) {
-        alert("Pokemon No")
+    } catch (error) {
+        alert("Pokemon No Encontrado")
     }
 }
-
-obtenerPokemon(urlPokemon)
