@@ -12,6 +12,7 @@ public class basePadre {
 
     }
     public void visualizarABC(){
+
         System.out.println("Metodo visualizarABC de la clase basePadre.");
     }
     public int getA(){
